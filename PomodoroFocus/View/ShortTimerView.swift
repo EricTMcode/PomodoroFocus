@@ -1,13 +1,13 @@
 //
-//  WorkTimerView.swift
+//  ShortTimerView.swift
 //  PomodoroFocus
 //
-//  Created by Eric on 26/02/2024.
+//  Created by Eric on 29/02/2024.
 //
 
 import SwiftUI
 
-struct WorkTimerView: View {
+struct ShortTimerView: View {
     @ObservedObject var viewModel = ViewModel()
     @State private var tapped = false
     
@@ -16,14 +16,14 @@ struct WorkTimerView: View {
             Color.black.ignoresSafeArea(edges: .all)
             VStack {
                 Spacer()
-                Text(viewModel.secondsToMinutesAndSeconds(viewModel.workTimeRemaining))
+                Text(viewModel.secondsToMinutesAndSeconds(viewModel.shortBreakTimeRemaining))
                     .font(.system(size: 90))
                     .foregroundStyle(.white)
                 
                 Spacer()
                 
                 HStack(alignment: .center, spacing: 50) {
-                    if viewModel.workTimerMode == .running || viewModel.workTimerMode == .paused {
+                    if viewModel.shortBreakTimerMode == .running || viewModel.shortBreakTimerMode == .paused {
                         
                         Button {
                             viewModel.resetTimers()
@@ -36,11 +36,11 @@ struct WorkTimerView: View {
                     }
                     
                     Button {
-                        if viewModel.workTimerMode == .running {
+                        if viewModel.shortBreakTimerMode == .running {
                             viewModel.pauseTimers()
                             tapped.toggle()
                         } else {
-                            viewModel.startWorkTimer()
+                            viewModel.startShortBreakTimer()
                             tapped.toggle()
                         }
                     } label: {
@@ -48,12 +48,12 @@ struct WorkTimerView: View {
                             Circle()
                                 .frame(width: 70, height: 70)
                                 .foregroundStyle(.purpleTheme)
-                            Image(systemName: viewModel.workTimerMode == .running ? "pause.fill" : "play.fill")
+                            Image(systemName: viewModel.shortBreakTimerMode == .running ? "pause.fill" : "play.fill")
                                 .foregroundStyle(.black)
                                 .font(.system(size: 34))
                         }
                     }
-                    if viewModel.workTimerMode == .running || viewModel.workTimerMode == .paused {
+                    if viewModel.shortBreakTimerMode == .running || viewModel.shortBreakTimerMode == .paused {
                         Button {
                             viewModel.advanceOneMinutesForward()
                         } label: {
@@ -73,5 +73,5 @@ struct WorkTimerView: View {
 }
 
 #Preview {
-    WorkTimerView()
+    ShortTimerView()
 }

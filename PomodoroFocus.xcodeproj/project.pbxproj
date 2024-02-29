@@ -13,6 +13,8 @@
 		07E4073B2B8CBEF7002DD5A9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07E4073A2B8CBEF7002DD5A9 /* Preview Assets.xcassets */; };
 		07E407442B8CBF38002DD5A9 /* WorkTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E407432B8CBF38002DD5A9 /* WorkTimerView.swift */; };
 		07E407462B8CBFC3002DD5A9 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E407452B8CBFC3002DD5A9 /* ViewModel.swift */; };
+		07E407862B90B0E0002DD5A9 /* ShortTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E407852B90B0E0002DD5A9 /* ShortTimerView.swift */; };
+		07E407882B90B26C002DD5A9 /* LongBreakView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E407872B90B26C002DD5A9 /* LongBreakView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		07E4073A2B8CBEF7002DD5A9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		07E407432B8CBF38002DD5A9 /* WorkTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkTimerView.swift; sourceTree = "<group>"; };
 		07E407452B8CBFC3002DD5A9 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		07E407852B90B0E0002DD5A9 /* ShortTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortTimerView.swift; sourceTree = "<group>"; };
+		07E407872B90B26C002DD5A9 /* LongBreakView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongBreakView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 			children = (
 				07E407352B8CBEF5002DD5A9 /* ContentView.swift */,
 				07E407432B8CBF38002DD5A9 /* WorkTimerView.swift */,
+				07E407852B90B0E0002DD5A9 /* ShortTimerView.swift */,
+				07E407872B90B26C002DD5A9 /* LongBreakView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -160,6 +166,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				07E407362B8CBEF5002DD5A9 /* ContentView.swift in Sources */,
+				07E407862B90B0E0002DD5A9 /* ShortTimerView.swift in Sources */,
+				07E407882B90B26C002DD5A9 /* LongBreakView.swift in Sources */,
 				07E407442B8CBF38002DD5A9 /* WorkTimerView.swift in Sources */,
 				07E407462B8CBFC3002DD5A9 /* ViewModel.swift in Sources */,
 				07E407342B8CBEF5002DD5A9 /* PomodoroFocusApp.swift in Sources */,
